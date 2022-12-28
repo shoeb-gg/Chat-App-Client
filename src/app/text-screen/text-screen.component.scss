@@ -1,0 +1,27 @@
+p {
+  color: white;
+}
+
+.example-header-image {
+  background-image: url("https://material.angular.io/assets/img/examples/shiba1.jpg");
+  background-size: cover;
+}
+
+mat-card-title,
+mat-card-subtitle {
+  color: white;
+}
+
+.texta {
+  background-color: rgb(243, 255, 230);
+  resize: none;
+  outline: none;
+}
+
+.btn-big {
+  transition: 0.15s all ease-in-out;
+
+  &:hover {
+    transform: scale(1.15);
+  }
+}
