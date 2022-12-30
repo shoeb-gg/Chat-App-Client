@@ -3,9 +3,16 @@ module.exports = {
   content: ["./src/**/*.{html,ts,scss}"],
   theme: {
     colors: {
+      black: "#000000",
       gray: "#292524",
       nav: "#06283D",
       white: "#FFFFFF",
+      blue: {
+        light: "#BAD7E9",
+      },
+      green: {
+        online: "#409843",
+      },
       primary: {
         50: "#eff6ff",
         100: "#dbeafe",

@@ -6,9 +6,7 @@ const routes: Routes = [
   {
     path: 'chat',
     loadChildren: () =>
-      import('./text-screen/text-screen.module').then(
-        (m) => m.TextScreenModule
-      ),
+      import('./pages/pages.module').then((m) => m.PagesModule),
     canActivate: [AuthGuard],
   },
   {

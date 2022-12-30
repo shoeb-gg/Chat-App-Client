@@ -1,23 +1,24 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { TextScreenRoutingModule } from './text-screen-routing.module';
-import { TextScreenComponent } from './text-screen.component';
-
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { FormsModule } from '@angular/forms';
 
+import { PagesRoutingModule } from './pages-routing.module';
+import { ChatScreenComponent } from './chat-screen/chat-screen.component';
+import { OnlineUsersComponent } from './online-users/online-users.component';
+
 @NgModule({
-  declarations: [TextScreenComponent],
+  declarations: [ChatScreenComponent, OnlineUsersComponent],
   imports: [
     CommonModule,
-    TextScreenRoutingModule,
+    PagesRoutingModule,
     MatCardModule,
     MatButtonModule,
     MatIconModule,
     FormsModule,
   ],
 })
-export class TextScreenModule {}
+export class PagesModule {}

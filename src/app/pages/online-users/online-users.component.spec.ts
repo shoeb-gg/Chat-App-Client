@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TextScreenComponent } from './text-screen.component';
+import { OnlineUsersComponent } from './online-users.component';
 
-describe('TextScreenComponent', () => {
-  let component: TextScreenComponent;
-  let fixture: ComponentFixture<TextScreenComponent>;
+describe('OnlineUsersComponent', () => {
+  let component: OnlineUsersComponent;
+  let fixture: ComponentFixture<OnlineUsersComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TextScreenComponent ]
+      declarations: [ OnlineUsersComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TextScreenComponent);
+    fixture = TestBed.createComponent(OnlineUsersComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
