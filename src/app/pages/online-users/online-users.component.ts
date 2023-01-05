@@ -10,15 +10,14 @@ import { SocketService } from '../../services/socket.service';
 export class OnlineUsersComponent implements OnInit {
   constructor(private socketService: SocketService) {}
 
-  public users: any[] = [
-    { name: 'Peter Steele' },
-    { name: 'Eminem' },
-    { name: 'Fred Durst' },
-    { name: 'Lana Del Rey' },
-    { name: 'Ayub Bachhu' },
-  ];
+  public users: any[] = [];
 
   ngOnInit(): void {
-    this.socketService.onlineUsersCount();
+    this.users = this.socketService.onlineClients;
+    this.socketService.onlineClientsUpdater$.subscribe((res) => {
+      this.users = res.filter((v: any, i: any, s: any) => {
+        return s.indexOf(v) === i;
+      });
+    });
   }
 }

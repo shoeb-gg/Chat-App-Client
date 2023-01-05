@@ -42,6 +42,8 @@ export class LoginComponent implements OnInit {
 
       if (res.message === 'Success') {
         localStorage.setItem('token', res.token);
+        localStorage.setItem('name', res.name);
+        localStorage.setItem('id', res.id);
         this.router.navigate(['/chat']);
       }
     });
